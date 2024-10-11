@@ -8,18 +8,22 @@ const myWorkTour = [
             {
                 label: 'Ecommerce App',
                 value: 'ecom-app',
+                url: ''
             },
             {
                 label: 'Monthly Hisab Kitab',
                 value: 'msk',
+                url: ''
             },
             {
                 label: 'HR App',
                 value: 'hr-app',
+                url: 'https://pridim-hr-app.firebaseapp.com/'
             },
             {
                 label: 'My Tech Yatra',
                 value: 'mty',
+                url: 'https://my-tech-yatra.web.app/'
             }
         ]
     },
@@ -29,14 +33,17 @@ const myWorkTour = [
             {
                 label: 'MPTool UI',
                 value: 'mptool-ui',
+                url: ''
             },
             {
                 label: 'ePropertyPlus',
                 value: 'epp',
+                url: 'https://play.google.com/store/search?q=epropertyplus&c=apps&hl=en'
             },
             {
                 label: 'NextUp Performance',
                 value: 'nextup',
+                url: 'https://play.google.com/store/apps/details?id=com.nextup.app&hl=en'
             }
         ]
     }
@@ -58,7 +65,12 @@ const MyWorkTour = () => {
                     <Box component="h5" sx={{mt: 0.5}}>{wt.tourType}:</Box>
                     <Box ml={1}>
                         {wt.data.map((work) =>
-                            <Button key={work.value} sx={{textDecoration: 'underline'}}>{work.label}</Button>
+                            <Button
+                                key={work.value}
+                                href={work.url}
+                                target='_blank'
+                                sx={{textDecoration: 'underline'}}
+                            >{work.label}</Button>
                         )}
                     </Box>
                 </Box>
