@@ -17,8 +17,9 @@ h1 {
   padding: 1rem;
 }
 .footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 42%;
   padding: .5rem;
+  font-weight: bold;
 }

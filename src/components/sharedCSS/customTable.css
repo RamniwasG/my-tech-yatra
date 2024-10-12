@@ -1,0 +1,11 @@
+.custom-table {
+    min-width: 300px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 1px #ddd;
+    margin-bottom: 3rem;
+}
+.custom-table-container {
+    width: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
