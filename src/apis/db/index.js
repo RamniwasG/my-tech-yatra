@@ -44,4 +44,22 @@ export const myWorkTour = [
             }
         ]
     }
+];
+
+export const myProjects = [
+    { 
+        id: 0, type: 'web', title: 'WCG Phase 1', company: 'Credera', tenure: '2022 - Till now',
+        desc: 'This project is design and develop for ...',
+        technologies: ['Svelte', 'Svelte/Store', 'CSS'], isOpen: false
+    },
+    { 
+        id: 1, type: 'web', title: 'MpTool UI', company: 'Innominds', tenure: '2020 - 2022',
+        desc: 'This project is design and develop for ...',
+        technologies: ['React', 'Redux', 'MUI', 'Chart.js', 'HTML/CSS'], isOpen: false
+    },
+    { 
+        id: 2, type: 'web', title: 'POS', company: 'Qvantel', tenure: '2019 - 2020',
+        desc: 'This project is design and develop for ...',
+        technologies: ['React', 'Redux', 'Redux/Saga', 'Internal CSS'], isOpen: false
+    }
 ]
