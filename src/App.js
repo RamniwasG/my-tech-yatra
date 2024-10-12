@@ -13,9 +13,7 @@ function App() {
   return ( <>
     <ToastContainer />
     <div className="App">
-      <header className="App-header">
-        <ResponsiveAppBar />
-      </header>
+      <ResponsiveAppBar />
       <main>
         <MainContent />
       </main>

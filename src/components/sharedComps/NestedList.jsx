@@ -40,10 +40,10 @@ export default function NestedList() {
   return (
     <List
         sx={{
-            width: 'auto', bgcolor: 'background.paper', fontSize: '16px',
+            width: 'auto', fontSize: '16px',
             pl: { xs: '0rem', sm: '3rem', md: '5rem'},
             pr: { xs: '0rem', sm: '3rem', md: '5rem'},
-            background:'radial-gradient(#E6E6E6, white)'
+            mb: 5
         }}
         component="nav"
         aria-labelledby="nested-list-subheader"
@@ -58,7 +58,7 @@ export default function NestedList() {
                     <ListItemIcon>
                         {project.type === 'web' ? <WebIcon /> : <PhoneAndroidIcon />}
                     </ListItemIcon>
-                    <ListItemText primary={project.title} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '25%'}} />
+                    <ListItemText primary={project.title} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '25%'}}>Project</ListItemText>
                     <ListItemText primary={project.company} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '20%'}} />
                     <ListItemText primary={project.tenure} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '20%'}} />
                     {project.isOpen ? <ExpandLess /> : <ExpandMore />}

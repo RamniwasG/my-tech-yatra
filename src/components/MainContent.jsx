@@ -3,6 +3,7 @@ import SearchBar from './contents/SearchBar';
 import MyWorkTour from './contents/MyWorkTour';
 import MyEducation from './contents/MyEducation';
 import MyProjects from './contents/MyProjects';
+import MyContact from './contents/MyContact';
 
 const MainContent = () => {
 
@@ -11,6 +12,7 @@ const MainContent = () => {
         <MyWorkTour />
         <MyEducation />
         <MyProjects />
+        <MyContact />
     </Box>
 }
 
