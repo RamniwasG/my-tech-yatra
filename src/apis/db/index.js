@@ -94,7 +94,7 @@ export const myProjects = [
     { 
         id: 4, type: 'web', title: 'POS', company: 'Qvantel Solutions Pvt Ltd', tenure: '2019 - 2020',
         role: 'UI Developer',
-        desc: 'TPOS is a stand-alone application for the omnichannel agents/salespersons who use this application for creating a new customer OR updating the services given to customers.',
+        desc: 'POS is a stand-alone application for the omnichannel agents/salespersons who use this application for creating a new customer OR updating the services given to customers.',
         technologies: ['React', 'Redux', 'Redux/Saga', 'TypeScript', 'Consul', 'Internal CSS'],
         isOpen: false
     },
