@@ -9,6 +9,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 import WebIcon from '@mui/icons-material/Web';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import DescriptionIcon from '@mui/icons-material/Description';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { myProjects } from '../../apis/db';
@@ -65,6 +66,12 @@ export default function NestedList() {
                 </ListItemButton>
                 <Collapse in={project.isOpen} timeout="auto" unmountOnExit sx={{ border: '1px groove'}}>
                     <List component="div" disablePadding>
+                        <ListItemButton sx={{ pl: 4 }}>
+                            <ListItemIcon>
+                                <PermIdentityIcon />
+                            </ListItemIcon>
+                            <ListItemText secondary={project.role} />
+                        </ListItemButton>
                         <ListItemButton sx={{ pl: 4 }}>
                             <ListItemIcon>
                                 <DescriptionIcon />
