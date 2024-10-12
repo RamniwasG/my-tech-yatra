@@ -2,7 +2,7 @@ import Box from '@mui/material/Box';
 
 const MyContact = () => {
 
-    return <Box className="container" flexDirection="row" sx={{ width: 'auto', p: 7.5}}>
+    return <Box id="Contact" className="container" flexDirection="row" sx={{ width: 'auto', p: 7.5}}>
         <Box className="container">
             <Box component="h6" mt={0} mb={1.5}>Office:</Box>
             <Box component="span" className='text-sm'>

@@ -12,7 +12,7 @@ const MyWorkTour = () => {
         }
     }
 
-    return <Box className="container" sx={{border: '1px outset'}}>
+    return <Box id="Work" className="container" sx={{border: '1px outset'}}>
         <h1 className='text-shadow'>My work tour</h1>
         <Box className="container"
             alignItems="flex-start"

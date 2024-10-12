@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Home', 'Work', 'Education', 'Projects', 'Contact Us'];
+const pages = ['Home', 'Work', 'Education', 'Projects', 'Contact'];
 const settings = ['Profile', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -88,27 +88,28 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-            <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href="#app-bar-with-responsive-menu"
-                sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontWeight: 'bolder',
-                letterSpacing: '.3rem',
-                textDecoration: 'none',
-                color: '#000',
-                }}
-            >
-                My Tech Yatra
-            </Typography>
+          <Typography
+            variant="h5"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              display: { xs: 'flex', md: 'none' },
+              flexGrow: 1,
+              fontWeight: 'bolder',
+              letterSpacing: '.3rem',
+              textDecoration: 'none',
+              color: '#000',
+            }}
+          >
+            My Tech Yatra
+          </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
+                href={`#${page}`}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, display: 'block' }}
               >
@@ -117,11 +118,14 @@ function ResponsiveAppBar() {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
+            <Box display="flex" flexDirection="row" alignItems="center">
+              <Typography sx={{ textAlign: 'center', mr: 1 }}>Hello, Raman</Typography>
+              <Tooltip title="Open Profile">
+                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                  <Avatar alt="Raman" src="/static/images/avatar/2.jpg" />
+                </IconButton>
+              </Tooltip>
+            </Box>
             <Menu
               sx={{ mt: '45px' }}
               id="menu-appbar"

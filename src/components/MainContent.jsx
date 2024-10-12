@@ -7,7 +7,7 @@ import MyContact from './contents/MyContact';
 
 const MainContent = () => {
 
-    return <Box className="container">
+    return <Box id="Home" className="container">
         <SearchBar />
         <MyWorkTour />
         <MyEducation />
