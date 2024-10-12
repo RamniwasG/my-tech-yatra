@@ -4,8 +4,6 @@
     box-shadow: 0px 1px 1px #ddd;
     margin-bottom: 3rem;
 }
-.custom-table-container {
+.width-auto {
     width: auto !important;
-    padding-left: 5rem;
-    padding-right: 5rem;
 }

@@ -1,8 +1,16 @@
 import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
 import { myWorkTour } from '../../apis/db';
+import { toast } from 'react-toastify';
 
 const MyWorkTour = () => {
+
+    const handleWorkItemClick = (work) => {
+        if(!work.url) {
+            toast.error('URL not found OR It might be possible that this app is made for internal use.')
+            return
+        }
+    }
 
     return <Box className="container" sx={{outline: '1px solid'}}>
         <h1 className='text-shadow'>My work tour</h1>
@@ -21,6 +29,7 @@ const MyWorkTour = () => {
                             <Button
                                 key={work.value}
                                 href={work.url}
+                                onClick={() => handleWorkItemClick(work)}
                                 target='_blank'
                                 sx={{textDecoration: 'underline'}}
                             >{work.label}</Button>

@@ -1,15 +1,17 @@
 import './App.css';
 import './global.css';
+import 'react-toastify/dist/ReactToastify.css';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
-
+import { ToastContainer } from 'react-toastify';
 import ResponsiveAppBar from './components/AppBar';
 import MainContent from './components/MainContent';
 
 function App() {
-  return (
+  return ( <>
+    <ToastContainer />
     <div className="App">
       <header className="App-header">
         <ResponsiveAppBar />
@@ -21,6 +23,7 @@ function App() {
         mytechyatra@2024
       </footer>
     </div>
+    </>
   );
 }
 

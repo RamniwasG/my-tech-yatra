@@ -46,7 +46,9 @@ rows = rows.sort((a, b) => a.passing_year > b.passing_year ? -1
 
 export default function CustomTable() {
   return (
-    <TableContainer component={Paper} className='custom-table-container'>
+    <TableContainer component={Paper} className='width-auto'
+      sx={{pl: { xs: '3rem', md: '5rem'}, pr: { xs: '3rem', md: '5rem'}}}
+    >
       <Table className='custom-table' aria-label="customized table">
         <TableHead>
           <TableRow>
