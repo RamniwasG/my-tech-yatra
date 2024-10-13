@@ -118,7 +118,15 @@ function ResponsiveAppBar() {
             My Tech Yatra
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            <Box component="img" src='logo.png' width="145px" height="65px" alt={"Home"} />
+            <a href="#Home">
+              <Box
+                component="img"
+                src='logo.png'
+                width="145px"
+                height="65px" 
+                alt={"Home"}
+              />
+            </a>
             {pages.map((page) => {
               if(page !== 'Home') {
                 return <Button
