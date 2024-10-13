@@ -41,7 +41,7 @@ export const myWorkTour = [
         ]
     },
     {
-        tourType: 'Company',
+        tourType: 'For Office',
         data: [
             {
                 label: 'MPTool UI',

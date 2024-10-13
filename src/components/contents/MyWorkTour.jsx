@@ -30,7 +30,7 @@ const MyWorkTour = () => {
                     className='container' flexDirection="row" justifyContent="flex-start"
                     sx={{ alignItems: { xs: 'flex-start', md: 'center'}}}
                 >
-                    <Box component="h5" sx={{mt: 0.75}}>{wt.tourType}:</Box>
+                    <Box component="h5" sx={{mt: {xs: 0.75, md: .5} }}>{wt.tourType}:</Box>
                     <Box ml={1}>
                         {wt.data.map((work) =>
                             <Button
