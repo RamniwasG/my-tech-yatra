@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
@@ -145,7 +145,7 @@ function ResponsiveAppBar() {
               <Typography sx={{ textAlign: 'center', mr: 1, display: {xs: 'none', md: 'flex'} }}>Hello, Ramniwas</Typography>
               <Tooltip title="Open Profile">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Ramniwas" src="/static/images/avatar/2.jpg" />
+                  <AccountCircleIcon fontSize='32px' />
                 </IconButton>
               </Tooltip>
             </Box>
