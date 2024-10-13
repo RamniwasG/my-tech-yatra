@@ -59,9 +59,9 @@ export default function NestedList() {
                     <ListItemIcon>
                         {project.type === 'web' ? <WebIcon /> : <PhoneAndroidIcon />}
                     </ListItemIcon>
-                    <ListItemText primary={project.title} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '25%'}}>Project</ListItemText>
-                    <ListItemText primary={project.company} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '20%'}} />
-                    <ListItemText primary={project.tenure} primaryTypographyProps={{fontWeight: 'bold'}} sx={{width: '20%'}} />
+                    <ListItemText primary={project.title} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '25%'}} />
+                    <ListItemText primary={project.company} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
+                    <ListItemText primary={project.tenure} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
                     {project.isOpen ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
                 <Collapse in={project.isOpen} timeout="auto" unmountOnExit sx={{ border: '1px groove'}}>
@@ -70,19 +70,19 @@ export default function NestedList() {
                             <ListItemIcon>
                                 <PermIdentityIcon />
                             </ListItemIcon>
-                            <ListItemText secondary={project.role} />
+                            <ListItemText primary={project.role} />
                         </ListItemButton>
                         <ListItemButton sx={{ pl: 4 }}>
                             <ListItemIcon>
                                 <DescriptionIcon />
                             </ListItemIcon>
-                            <ListItemText secondary={project.desc} />
+                            <ListItemText primary={project.desc} />
                         </ListItemButton>
                         <ListItemButton sx={{ pl: 4 }}>
                             <ListItemIcon>
                                 <SettingsIcon />
                             </ListItemIcon>
-                            <ListItemText secondary={project.technologies.join(', ') + " etc."} />
+                            <ListItemText primary={project.technologies.join(', ') + " etc."} />
                         </ListItemButton>
                     </List>
                 </Collapse>

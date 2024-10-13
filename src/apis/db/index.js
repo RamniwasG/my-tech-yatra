@@ -59,19 +59,39 @@ export const myWorkTour = [
                 url: 'https://play.google.com/store/apps/details?id=com.nextup.app&hl=en'
             }
         ]
+    },
+    {
+        tourType: 'Online Resources',
+        data: [
+            {
+                label: 'Github',
+                value: 'git',
+                url: 'https://github.com/RamniwasG'
+            },
+            {
+                label: 'Bitbucket',
+                value: 'bitbucket',
+                url: 'https://bitbucket.org/RG_G/'
+            },
+            {
+                label: 'LinkedIn Profile',
+                value: 'linkedin',
+                url: 'https://www.linkedin.com/in/ramniwas-gupta-1185a285/'
+            }
+        ]
     }
 ];
 
 export const myProjects = [
     { 
-        id: 0, type: 'web', title: 'WG Phase 3 Rollout', company: 'TA Digital(Credera)', tenure: '2022 - Till now',
+        id: 0, type: 'web', title: 'WG Phase 3 Rollout', company: 'Credera', tenure: '2022 - Till now',
         role: 'Senior Specialist',
         desc: 'This application is used for fetch/update the jobs and related appointments that have been Scheduled/Hold for a certain date and assigned some of the most suitable technicians and many more.',
         technologies: ['Svelte', 'Svelte/Store', 'CSS'],
         isOpen: false
     },
     { 
-        id: 1, type: 'web', title: 'Digital Onboarding', company: 'TA Digital(Credera)', tenure: 'Feb-2023 to Oct-2023',
+        id: 1, type: 'web', title: 'Digital Onboarding', company: 'Credera', tenure: 'Feb-2023 to Oct-2023',
         role: 'Senior Software engineer',
         desc: 'A system that allows a customer/patient to onboard or upload his past history to monitor and also be able to add/search PCP and many other features.',
         technologies: ['VueJS', 'Nucleus4', 'HTML/CSS'],

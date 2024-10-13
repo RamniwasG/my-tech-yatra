@@ -15,15 +15,18 @@ const MyWorkTour = () => {
     return <Box id="Work" className="container" sx={{border: '1px outset'}}>
         <h1 className='text-shadow'>My work tour</h1>
         <Box className="container"
-            alignItems="flex-start"
+            alignItems="center"
             justifyContent="flex-start"
             width="auto"
             pl={10} mb={3.5}
             sx={{flexDirection: { md: 'row'}}}
         >
             {myWorkTour.map((wt) => 
-                <Box key={wt.tourType} component="span" className='container' flexDirection="row" justifyContent="flex-start">
-                    <Box component="h5" sx={{mt: 0.5}}>{wt.tourType}:</Box>
+                <Box key={wt.tourType} component="span"
+                    className='container' flexDirection="row" justifyContent="flex-start"
+                    sx={{ alignItems: { xs: 'flex-start', md: 'center'}}}
+                >
+                    <Box component="h5" sx={{mt: 0.75}}>{wt.tourType}:</Box>
                     <Box ml={1}>
                         {wt.data.map((work) =>
                             <Button

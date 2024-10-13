@@ -35,7 +35,12 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="sticky" sx={{borderBottom: '1px outset', backgroundColor: 'Snow',pl: 7.5, pr: 7.5}}>
+    <AppBar position="sticky" sx={{
+      borderBottom: '1px outset',
+      backgroundColor: 'Snow',
+      pl: {xs: .5, md: 7.5}, 
+      pr: {xs: .5, md: 7.5}
+    }}>
       <Container maxWidth="xl" sx={{color: 'white'}}>
         <Toolbar disableGutters sx={{ color: 'rgb(0, 133, 252)'}}>
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -89,7 +94,7 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           <Typography
-            variant="h5"
+            variant="h6"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
@@ -98,7 +103,7 @@ function ResponsiveAppBar() {
               display: { xs: 'flex', md: 'none' },
               flexGrow: 1,
               fontWeight: 'bolder',
-              letterSpacing: '.3rem',
+              letterSpacing: 'rem',
               textDecoration: 'none',
               color: '#000',
             }}
@@ -119,10 +124,10 @@ function ResponsiveAppBar() {
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Box display="flex" flexDirection="row" alignItems="center">
-              <Typography sx={{ textAlign: 'center', mr: 1 }}>Hello, Raman</Typography>
+              <Typography sx={{ textAlign: 'center', mr: 1 }}>Hello, Ramniwas</Typography>
               <Tooltip title="Open Profile">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar alt="Raman" src="/static/images/avatar/2.jpg" />
+                  <Avatar alt="Ramniwas" src="/static/images/avatar/2.jpg" />
                 </IconButton>
               </Tooltip>
             </Box>
