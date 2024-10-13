@@ -18,8 +18,12 @@ const MyWorkTour = () => {
             alignItems="center"
             justifyContent="flex-start"
             width="auto"
-            pl={10} mb={3.5}
-            sx={{flexDirection: { md: 'row'}}}
+            mb={3.5}
+            sx={{
+                flexDirection: { md: 'row'},
+                pl: { xs: 4, md: 10},
+                pr: { xs: 4, md: 10}
+            }}
         >
             {myWorkTour.map((wt) => 
                 <Box key={wt.tourType} component="span"

@@ -25,7 +25,7 @@ const SearchBar = () => {
             inputProps={{
               'aria-label': 'weight'
             }}
-            sx={{ pr: 0, width: '60%'}}
+            sx={{ pr: 0, width: {xs: '80%', md: '60%'} }}
             onChange={(e) => setSearchText(e.target.value)}
             value={searchText}
             placeholder='Search Work, Education, Projects etc.'

@@ -88,7 +88,14 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                  <Button
+                    key={page}
+                    href={`#${page}`}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, display: 'block', m: 0 }}
+                  >
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
@@ -111,8 +118,10 @@ function ResponsiveAppBar() {
             My Tech Yatra
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
+            <Box component="img" src='logo.png' width="145px" height="65px" alt={"Home"} />
+            {pages.map((page) => {
+              if(page !== 'Home') {
+                return <Button
                 key={page}
                 href={`#${page}`}
                 onClick={handleCloseNavMenu}
@@ -120,11 +129,12 @@ function ResponsiveAppBar() {
               >
                 {page}
               </Button>
-            ))}
+            } else return null
+            })}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Box display="flex" flexDirection="row" alignItems="center">
-              <Typography sx={{ textAlign: 'center', mr: 1 }}>Hello, Ramniwas</Typography>
+              <Typography sx={{ textAlign: 'center', mr: 1, display: {xs: 'none', md: 'flex'} }}>Hello, Ramniwas</Typography>
               <Tooltip title="Open Profile">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt="Ramniwas" src="/static/images/avatar/2.jpg" />
