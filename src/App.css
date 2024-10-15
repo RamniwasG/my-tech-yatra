@@ -16,6 +16,12 @@ h1 {
 .main {
   padding: 1rem;
 }
+.text-info {
+  font-size: 14px;
+  text-align: center;
+  color: grey;
+  margin-bottom: 1rem;
+}
 .footer {
   position: relative;
   bottom: 0;

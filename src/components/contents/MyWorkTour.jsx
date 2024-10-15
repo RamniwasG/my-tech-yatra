@@ -2,6 +2,7 @@ import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
 import { myWorkTour } from '../../apis/db';
 import { toast } from 'react-toastify';
+import TextInfo from '../sharedComps/TextInfo';
 
 const MyWorkTour = () => {
 
@@ -13,7 +14,8 @@ const MyWorkTour = () => {
     }
 
     return <Box id="Work" className="container" sx={{border: '1px outset'}}>
-        <h1 className='text-shadow'>My work tour</h1>
+        <Box component="h1" mb={1} className='text-shadow'>My work tour</Box>
+        <TextInfo text="( To get a quick tour of my work, please click on below links. )" />
         <Box className="container"
             alignItems="center"
             justifyContent="flex-start"

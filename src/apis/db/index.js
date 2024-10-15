@@ -3,6 +3,11 @@ export const myWorkTour = [
         tourType: 'Personal',
         data: [
             {
+                label: 'Ecommrce Site',
+                value: 'ecom-site',
+                url: 'https://epridim.web.app/'
+            },
+            {
                 label: 'My Tech Yatra',
                 value: 'mty',
                 url: 'https://my-tech-yatra.web.app/'
@@ -44,19 +49,29 @@ export const myWorkTour = [
         tourType: 'For Office',
         data: [
             {
-                label: 'MPTool UI',
+                label: 'MPTool UI(D)',
                 value: 'mptool-ui',
                 url: ''
             },
             {
-                label: 'ePropertyPlus',
+                label: 'ePropertyPlus(M)',
                 value: 'epp',
                 url: 'https://play.google.com/store/search?q=epropertyplus&c=apps&hl=en'
             },
             {
-                label: 'NextUp Performance',
+                label: 'medibookr',
+                value: 'medibookr',
+                url: ''
+            },
+            {
+                label: 'NextUp Performance(M)',
                 value: 'nextup',
                 url: 'https://play.google.com/store/apps/details?id=com.nextup.app&hl=en'
+            },
+            {
+                label: 'NextUp Performance(Web)',
+                value: 'nextup-web',
+                url: ''
             }
         ]
     },
