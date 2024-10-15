@@ -40,6 +40,7 @@ const MyWorkTour = () => {
                                 href={work.url}
                                 onClick={() => handleWorkItemClick(work)}
                                 target='_blank'
+                                disabled={!work.url}
                                 sx={{textDecoration: 'underline'}}
                             >{work.label}</Button>
                         )}

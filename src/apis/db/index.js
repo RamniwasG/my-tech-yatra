@@ -49,14 +49,39 @@ export const myWorkTour = [
         tourType: 'For Office',
         data: [
             {
-                label: 'MPTool UI(D)',
-                value: 'mptool-ui',
+                label: 'WG Phase3 Rollout(W)',
+                value: 'wg-phase3-rollout',
+                url: ''
+            },
+            {
+                label: 'Digital Onboarding(W)',
+                value: 'digital-onboarding',
+                url: ''
+            },
+            {
+                label: 'MPTool(Scientific Tool)(D)',
+                value: 'mptool',
+                url: ''
+            },
+            {
+                label: 'Ecat(W)',
+                value: 'ecat',
+                url: ''
+            },
+            {
+                label: 'POS(W)',
+                value: 'pos',
                 url: ''
             },
             {
                 label: 'ePropertyPlus(M)',
                 value: 'epp',
                 url: 'https://play.google.com/store/search?q=epropertyplus&c=apps&hl=en'
+            },
+            {
+                label: 'inAppBi(W)',
+                value: 'inappbi',
+                url: 'https://www.inappbi.com/'
             },
             {
                 label: 'medibookr',
@@ -69,7 +94,7 @@ export const myWorkTour = [
                 url: 'https://play.google.com/store/apps/details?id=com.nextup.app&hl=en'
             },
             {
-                label: 'NextUp Performance(Web)',
+                label: 'NextUp Performance(W)',
                 value: 'nextup-web',
                 url: ''
             }
