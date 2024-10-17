@@ -29,6 +29,10 @@ h1 {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+.icon-wrapper > img {
+  width: 70px;
+  height: 70px;
+}
 .icon-wrapper {
   padding: 20px 12px;
   margin: 8px;
