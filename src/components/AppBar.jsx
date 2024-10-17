@@ -11,8 +11,9 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import AppLogo from './../assets/logo.png'
 
-const pages = ['Home', 'Work', 'Education', 'Projects', 'Contact'];
+const pages = ['Home', 'Work', 'Education', 'Projects', 'Technologies', 'Contact'];
 const settings = ['Profile', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -121,7 +122,7 @@ function ResponsiveAppBar() {
             <a href="#Home">
               <Box
                 component="img"
-                src='logo.png'
+                src={AppLogo}
                 width="145px"
                 height="65px" 
                 alt={"Home"}

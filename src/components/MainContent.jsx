@@ -4,6 +4,7 @@ import MyWorkTour from './contents/MyWorkTour';
 import MyEducation from './contents/MyEducation';
 import MyProjects from './contents/MyProjects';
 import MyContact from './contents/MyContact';
+import TechnologiesIKnow from './contents/Technologies';
 
 const MainContent = () => {
 
@@ -12,6 +13,7 @@ const MainContent = () => {
         <MyWorkTour />
         <MyEducation />
         <MyProjects />
+        <TechnologiesIKnow />
         <MyContact />
     </Box>
 }
