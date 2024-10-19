@@ -3,30 +3,29 @@ export const myWorkTour = [
         tourType: 'Personal',
         data: [
             {
-                label: 'Ecommrce Site',
-                value: 'ecom-site',
-                url: 'https://epridim.web.app/'
-            },
-            {
                 label: 'My Tech Yatra',
                 value: 'mty',
                 url: 'https://my-tech-yatra.web.app/'
             },
-
+            {
+                label: 'Maiher Farms Ltd',
+                value: 'mfltd',
+                url: 'https://maihar-farms-ltd.web.app/home'
+            },
             {
                 label: 'Monthly Hisab Kitab',
                 value: 'mhk',
                 url: 'https://monthly-hisab-kitab.web.app/'
             },
             {
+                label: 'Ecommrce Site',
+                value: 'ecom-site',
+                url: 'https://epridim.web.app/'
+            },
+            {
                 label: 'HR Mgt App',
                 value: 'hr-app',
                 url: 'https://pridim-hr-app.firebaseapp.com/'
-            },
-            {
-                label: 'Maiher Farms Ltd',
-                value: 'mfltd',
-                url: 'https://maihar-farms-ltd.web.app/home'
             },
             {
                 label: 'Hell App',

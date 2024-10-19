@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AppLogo from './../assets/logo.png'
 
-const pages = ['Home', 'Work', 'Education', 'Projects', 'Technologies', 'Contact'];
+const pages = ['Home', 'Work', 'Education', 'Projects', 'Technologies', 'Others', 'About Me'];
 const settings = ['Profile', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -143,7 +143,13 @@ function ResponsiveAppBar() {
           </Box>
           <Box sx={{ flexGrow: 0 }}>
             <Box display="flex" flexDirection="row" alignItems="center">
-              <Typography sx={{ textAlign: 'center', mr: 1, display: {xs: 'none', md: 'flex'} }}>Hello, Ramniwas</Typography>
+              <Box sx={{
+                display: {xs: 'none', md: 'flex'}, flexDirection:'column', alignItems: 'center',
+                fontSize: '12px', mr: 1, color: '#000' 
+              }}>
+                <Box component="span" className="text-bold">Hello, Ramniwas</Box>
+                <Box component="span">+91 8686340975</Box>
+              </Box>
               <Tooltip title="Open Profile">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <AccountCircleIcon fontSize='32px' />
