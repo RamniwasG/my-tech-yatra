@@ -4,6 +4,13 @@ import { myWorkTour } from '../../apis/db';
 import { toast } from 'react-toastify';
 import TextInfo from '../sharedComps/TextInfo';
 
+const deviceTypeLegends = [
+    { key: 'W', value: 'Website' },
+    { key: 'D', value: 'Desktop' },
+    { key: 'T', value: 'Tablet' },
+    { key: 'M', value: 'Mobile' },
+]
+
 const MyWorkTour = () => {
 
     const handleWorkItemClick = (work) => {
@@ -14,7 +21,15 @@ const MyWorkTour = () => {
     }
 
     return <Box id="Work" className="container" sx={{border: '1px outset'}}>
-        <Box component="h1" mb={1} className='text-shadow'>My work tour</Box>
+        <Box className="legend-wrapper" sx={{top: { xs: '36%', sm: '45%' }}}>
+            {deviceTypeLegends.map((device) =>
+                <TextInfo key={device.key}
+                    text={`${device.key}- ${device.value}`}
+                    styles={{fontSize: '10px', marginBottom: '2px'}}
+                />
+            )}
+        </Box>
+       <Box component="h1" mb={1} className='text-shadow'>My work tour</Box>
         <TextInfo text="( To get a quick tour of my work, please click on below links. )" />
         <Box className="container"
             alignItems="center"

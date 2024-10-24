@@ -45,7 +45,7 @@ export const myWorkTour = [
         ]
     },
     {
-        tourType: 'For Office',
+        tourType: 'Office',
         data: [
             {
                 label: 'WG Phase3 Rollout(W)',
@@ -53,8 +53,8 @@ export const myWorkTour = [
                 url: ''
             },
             {
-                label: 'Digital Onboarding(W)',
-                value: 'digital-onboarding',
+                label: 'Humana Staffing(W)',
+                value: 'humana-staffing',
                 url: ''
             },
             {
@@ -130,7 +130,7 @@ export const myProjects = [
         isOpen: false
     },
     { 
-        id: 1, type: 'web', title: 'Digital Onboarding', company: 'Credera', tenure: 'Feb-2023 to Oct-2023',
+        id: 1, type: 'web', title: 'Humana Staffing 2023', company: 'Credera', tenure: 'Feb-2023 to Oct-2023',
         role: 'Senior Software engineer',
         desc: 'A system that allows a customer/patient to onboard or upload his past history to monitor and also be able to add/search PCP and many other features.',
         technologies: ['VueJS', 'Nucleus4', 'HTML/CSS'],

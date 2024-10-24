@@ -55,3 +55,15 @@ h1 {
   padding: 1rem;
   font-weight: bold;
 }
+
+.legend-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: right;
+  position: absolute;
+  right: 0;
+  padding: .25rem;
+  border: 1px solid lightgrey;
+  margin: 1rem;
+}
