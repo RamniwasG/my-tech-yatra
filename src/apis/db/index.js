@@ -123,10 +123,10 @@ export const myWorkTour = [
 
 export const myProjects = [
     { 
-        id: 0, type: 'web', title: 'WG Phase 3 Rollout', company: 'Credera', tenure: 'Jan-2024 - Till now',
+        id: 0, type: 'web', title: 'WG Phase 3 Rollout for 8 sites', company: 'Credera', tenure: 'Jan-2024 - Till now',
         role: 'Senior Specialist',
-        desc: 'This application is used for fetch/update the jobs and related appointments that have been Scheduled/Hold for a certain date and assigned some of the most suitable technicians and many more.',
-        technologies: ['Svelte', 'Svelte/Store', 'CSS'],
+        desc: 'This application is used for fetch/update the jobs and related appointments that have been Scheduled/Hold for a certain date and assigned some of the most suitable technicians to provide the solution/service at home. Allowed to filter the jobs/technicians on many filter/sort criteria like appt modes, drive mode(truck/home), BUs and many more.',
+        technologies: ['Svelte', 'Svelte/Store', 'svelte-quill', 'svelte-splitpanes', 'moment', 'CSS'],
         isOpen: false
     },
     { 

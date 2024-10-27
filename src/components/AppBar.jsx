@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AppLogo from './../assets/logo.png'
 
-const pages = ['Home', 'Work', 'Education', 'Projects', 'Technologies', 'Others', 'About Me'];
+const pages = ['Home', 'Work', 'Education', 'Projects', 'Technologies', 'Others', 'Contact'];
 const settings = ['Profile', 'Logout'];
 
 function ResponsiveAppBar() {

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 const MyContact = () => {
 
     return <Box id="Contact" className="container" sx={{ width: 'auto', p: {xs: 3.5, md: 7.5} }}>
-        <Box component="h1" mt={0} className='text-shadow'>Contact Us</Box>
+        <Box component="h1" mt={0} className='text-shadow'>Contact</Box>
         <Box className="container" flexDirection="row">
             <Box className="container">
                 <Box component="h6" mt={0} mb={1.5}>Address:</Box>
