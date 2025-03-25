@@ -24,12 +24,14 @@ import Github from './../../assets/js-techs-icons/github.png';
 import EJS from './../../assets/js-techs-icons/ejs.png';
 import MySQL from './../../assets/js-techs-icons/mysql.png';
 import MongoDB from './../../assets/js-techs-icons/mongodb.png';
+import GraphQL from './../../assets/js-techs-icons/graphql.png';
+import NextJS from './../../assets/js-techs-icons/nextjs.png';
 
 export const techIconsList = [
     { label: 'ReactJS', url: ReactJS, experienced: true },
     { label: 'Redux/toolkit', url: Redux, experienced: true },
     { label: 'Svelte', url: Svelte , experienced: true},
-    { label: 'VueJs', url: VueJs, experienced: false },
+    { label: 'VueJs', url: VueJs, experienced: true },
     { label: 'NodeJS', url: NodeJS, experienced: true },
     { label: 'ExpressJS', url: ExpressJS, experienced: true },
     { label: 'JWT', url: JsonWebToken, experienced: true },
@@ -50,5 +52,7 @@ export const techIconsList = [
     { label: 'Github', url: Github, experienced: true },
     { label: 'EJS', url: EJS, experienced: false },
     { label: 'MySQL', url: MySQL, experienced: false },
-    { label: 'MongoDB', url: MongoDB, experienced: false }
+    { label: 'MongoDB', url: MongoDB, experienced: true },
+    { label: 'GraphQL', url: GraphQL, experienced: true },
+    { label: 'Next.js', url: NextJS, experienced: false }
 ];

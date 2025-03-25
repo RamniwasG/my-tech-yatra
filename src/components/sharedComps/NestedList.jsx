@@ -16,7 +16,7 @@ import { myProjects } from '../../apis/db';
 
 export default function NestedList() {
     const [projectList, setProjectList] = React.useState(myProjects)
-    const [selectedProjectId, setSelectedProject] = React.useState(0);
+    const [selectedProjectId, setSelectedProject] = React.useState(myProjects.filter((p)=>p.isOpen)[0]?.id || -1);
 
     React.useEffect(() => {
         if(selectedProjectId > -1) {
@@ -49,8 +49,19 @@ export default function NestedList() {
         component="nav"
         aria-labelledby="nested-list-subheader"
     >
+        <Box component="span">
+            <ListItemButton>
+                <ListItemIcon>
+                    <WebIcon />
+                </ListItemIcon>
+                <ListItemText primary={'PROJECT'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '24%'}} />
+                <ListItemText primary={'ORGANIZATION'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
+                <ListItemText primary={'CLIENT'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
+                <ListItemText primary={'SERVICE TENURE'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '21%'}} />
+            </ListItemButton>
+        </Box>
         {projectList.map((project) =>
-            <Box component="span" key={project.id}>
+            <Box component="span" key={`project${project.id}`}>
                 <ListItemButton
                     selected={selectedProjectId === project.id}
                     onClick={() => handleClick(project.id)}
@@ -61,6 +72,7 @@ export default function NestedList() {
                     </ListItemIcon>
                     <ListItemText primary={project.title} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '25%'}} />
                     <ListItemText primary={project.company} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
+                    <ListItemText primary={project.client} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
                     <ListItemText primary={project.tenure} primaryTypographyProps={{fontWeight: 'bold', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
                     {project.isOpen ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>

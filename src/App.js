@@ -1,3 +1,4 @@
+// import { useEffect } from 'react';
 import './App.css';
 import './global.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,8 +9,10 @@ import '@fontsource/roboto/700.css';
 import { ToastContainer } from 'react-toastify';
 import ResponsiveAppBar from './components/AppBar';
 import MainContent from './components/MainContent';
+// import API from './apis';
 
 function App() {
+
   return ( <>
     <ToastContainer />
     <div className="App">
