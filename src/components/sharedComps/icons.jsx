@@ -26,6 +26,7 @@ import MySQL from './../../assets/js-techs-icons/mysql.png';
 import MongoDB from './../../assets/js-techs-icons/mongodb.png';
 import GraphQL from './../../assets/js-techs-icons/graphql.png';
 import NextJS from './../../assets/js-techs-icons/nextjs.png';
+import SiteStudio from './../../assets/js-techs-icons/drupal_site_studio.png';
 
 export const techIconsList = [
     { label: 'ReactJS', url: ReactJS, experienced: true },
@@ -54,5 +55,6 @@ export const techIconsList = [
     { label: 'MySQL', url: MySQL, experienced: false },
     { label: 'MongoDB', url: MongoDB, experienced: true },
     { label: 'GraphQL', url: GraphQL, experienced: true },
-    { label: 'Next.js', url: NextJS, experienced: false }
+    { label: 'Next.js', url: NextJS, experienced: true },
+    { label: 'Site Studio', url: SiteStudio, experienced: false }
 ];

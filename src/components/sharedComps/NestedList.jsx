@@ -57,7 +57,7 @@ export default function NestedList() {
                 <ListItemText primary={'PROJECT'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '24%'}} />
                 <ListItemText primary={'ORGANIZATION'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
                 <ListItemText primary={'CLIENT'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '20%'}} />
-                <ListItemText primary={'SERVICE TENURE'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '21%'}} />
+                <ListItemText primary={'TENURE'} primaryTypographyProps={{fontWeight: 'bold', color:'#ed6c02', fontSize: { xs: '.75rem', md: '1rem'}}} sx={{width: '21%'}} />
             </ListItemButton>
         </Box>
         {projectList.map((project) =>

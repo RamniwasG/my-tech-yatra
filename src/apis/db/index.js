@@ -48,6 +48,11 @@ export const myWorkTour = [
         tourType: 'Office',
         data: [
             {
+                label: 'Envista Phase2 Implementations',
+                value: 'envista-phase2-implementations',
+                url: ''
+            },
+            {
                 label: 'WG Phase3 Rollout(W)',
                 value: 'wg-phase3-rollout',
                 url: ''
