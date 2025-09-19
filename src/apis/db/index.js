@@ -8,6 +8,11 @@ export const myWorkTour = [
                 url: 'https://my-tech-yatra.web.app/'
             },
             {
+                label: 'eGwala App',
+                value: 'egwala-app',
+                url: 'https://egwala-app.onrender.com'
+            },
+            {
                 label: 'Maiher Farms Ltd',
                 value: 'mfltd',
                 url: 'https://maihar-farms-ltd.web.app/home'
