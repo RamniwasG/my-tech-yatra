@@ -12,9 +12,9 @@ const MainContent = () => {
     return <Box id="Home" className="container">
         {/* <SearchBar /> */}
         <MyWorkTour />
-        <MyEducation />
         <MyProjects />
         <TechnologiesIKnow />
+        <MyEducation />
         <Others />
         <MyContact />
     </Box>

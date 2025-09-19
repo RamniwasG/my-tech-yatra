@@ -27,6 +27,7 @@ import MongoDB from './../../assets/js-techs-icons/mongodb.png';
 import GraphQL from './../../assets/js-techs-icons/graphql.png';
 import NextJS from './../../assets/js-techs-icons/nextjs.png';
 import SiteStudio from './../../assets/js-techs-icons/drupal_site_studio.png';
+import AEM from './../../assets/js-techs-icons/aem.png';
 
 export const techIconsList = [
     { label: 'ReactJS', url: ReactJS, experienced: true },
@@ -48,13 +49,14 @@ export const techIconsList = [
     { label: 'RollUp', url: RollUp, experienced: false },
     { label: 'AWS', url: AWS, experienced: false },
     { label: 'Firebase', url: Firebase, experienced: false },
-    { label: 'Heroku', url: Heroku, experienced: false },
+    { label: 'Heroku', url: Heroku, experienced: true },
     { label: 'Jira', url: Jira, experienced: true },
     { label: 'Github', url: Github, experienced: true },
     { label: 'EJS', url: EJS, experienced: false },
-    { label: 'MySQL', url: MySQL, experienced: false },
+    { label: 'MySQL', url: MySQL, experienced: true },
     { label: 'MongoDB', url: MongoDB, experienced: true },
     { label: 'GraphQL', url: GraphQL, experienced: true },
     { label: 'Next.js', url: NextJS, experienced: true },
-    { label: 'Site Studio', url: SiteStudio, experienced: false }
+    { label: 'Site Studio', url: SiteStudio, experienced: false },
+    { label: 'AEM', url: AEM, experienced: false }
 ];

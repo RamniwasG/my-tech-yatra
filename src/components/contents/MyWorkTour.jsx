@@ -44,11 +44,11 @@ const MyWorkTour = () => {
         >
             {myWorkTour.map((wt) => 
                 <Box key={wt.tourType} component="span"
-                    className='container' flexDirection="row" justifyContent="flex-start"
-                    sx={{ alignItems: { xs: 'flex-start', md: 'center'}}}
+                    className='container' flexDirection="column" justifyContent="flex-start"
+                    sx={{ alignItems: 'flex-start'}}
                 >
-                    <Box component="h5" sx={{mt: {xs: 0.75, md: .5} }}>{wt.tourType}:</Box>
-                    <Box ml={1}>
+                    <Box component="h5" sx={{ml: 1, mb: .25, mt: {xs: 0.75, md: .5} }}>{wt.tourType}:</Box>
+                    <Box>
                         {wt.data.map((work) =>
                             <Button
                                 key={work.value}
