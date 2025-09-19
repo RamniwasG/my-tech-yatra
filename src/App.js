@@ -21,7 +21,7 @@ function App() {
         <MainContent />
       </main>
       <footer className='footer text-sm'>
-        mytechyatra@2024
+        mytechyatra@2025
       </footer>
     </div>
     </>

@@ -8,7 +8,7 @@ const MyContact = () => {
             <Box className="container">
                 <Box component="h6" mt={0} mb={1.5}>Address:</Box>
                 <Box component="span" className='text-sm'>
-                    Sangam Vihar Sector-2, Fullanpur, <br /> Ghazipur, UP India - 233300
+                    H.No. 70K, Jargon Khas, Ruhipur <br /> Ghazipur, UP India - 233300
                 </Box>
             </Box>
             <Box className="container" alignItems="flex-end">

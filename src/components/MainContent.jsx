@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box';
-import SearchBar from './contents/SearchBar';
+// import SearchBar from './contents/SearchBar';
 import MyWorkTour from './contents/MyWorkTour';
 import MyEducation from './contents/MyEducation';
 import MyProjects from './contents/MyProjects';
@@ -10,7 +10,7 @@ import Others from './contents/Other';
 const MainContent = () => {
 
     return <Box id="Home" className="container">
-        <SearchBar />
+        {/* <SearchBar /> */}
         <MyWorkTour />
         <MyEducation />
         <MyProjects />
