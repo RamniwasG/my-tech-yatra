@@ -6,13 +6,13 @@ const MyContact = () => {
         <Box component="h1" mt={0} className='text-shadow'>Contact</Box>
         <Box className="container" flexDirection="row">
             <Box className="container">
-                <Box component="h6" mt={0} mb={1.5}>Address:</Box>
+                <Box component="h6" mt={0} mb={1}>Address:</Box>
                 <Box component="span" className='text-sm'>
-                    H.No. 70K, Jargon Khas, Ruhipur <br /> Ghazipur, UP India - 233300
+                    H.No. 70K, Jargon Khas<br /> Ghazipur, UP India - 233300
                 </Box>
             </Box>
             <Box className="container" alignItems="flex-end">
-                <Box component="h6" mt={0} mb={1.5}>Call/SMS or Email@:</Box>
+                <Box component="h6" mt={0} mb={1}>Call/SMS or Email@:</Box>
                 <Box component="span" className='text-sm'>
                 +91 8686340975
                 </Box>

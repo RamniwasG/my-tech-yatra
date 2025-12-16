@@ -67,3 +67,11 @@ h1 {
   border: 1px solid lightgrey;
   margin: 1rem;
 }
+
+.carousel .control-dots .dot {
+  background-color:deeppink
+}
+
+.carousel.carousel-slider .control-arrow {
+  background-color: gray;
+}

@@ -3,9 +3,19 @@ export const myWorkTour = [
         tourType: 'Personal',
         data: [
             {
+                label: 'PC APP',
+                value: 'pc-app',
+                url: 'https://pc-app.onrender.com/'
+            },
+            {
+                label: 'PC Admin',
+                value: 'pc-admin',
+                url: 'https://pc-admin.onrender.com/'
+            },
+            {
                 label: 'My Tech Yatra',
                 value: 'mty',
-                url: 'https://my-tech-yatra.web.app/'
+                url: 'https://my-tech-yatra.onrender.com/'
             },
             {
                 label: 'eGwala App',
@@ -120,7 +130,7 @@ export const myWorkTour = [
             {
                 label: 'Github',
                 value: 'git',
-                url: 'https://github.com/RamniwasG'
+                url: 'https://github.com/RamniwasG?tab=repositories'
             },
             {
                 label: 'Bitbucket',
@@ -152,7 +162,7 @@ export const myProjects = [
         isOpen: false
     },
     { 
-        id: 8, type: 'web', title: 'WG Phase 3 Rollout for 8 sites', company: 'Credera', client: 'Envista', tenure: 'Jan-2024 to Dec-2024',
+        id: 8, type: 'web', title: 'WG Phase 3 Rollout for 8 sites', company: 'Credera', client: 'Wrench Group', tenure: 'Jan-2024 to Dec-2024',
         role: 'Senior Developer',
         desc: 'This application is used for fetch/update the jobs and related appointments that have been Scheduled/Hold for a certain date and assigned some of the most suitable technicians to provide the solution/service at home. Allowed to filter the jobs/technicians on many filter/sort criteria like appt modes, drive mode(truck/home), BUs and many more.',
         technologies: ['Svelte', 'Svelte/Store', 'svelte-quill', 'svelte-splitpanes', 'moment', 'CSS'],
@@ -187,21 +197,21 @@ export const myProjects = [
         isOpen: false
     },
     { 
-        id: 3, type: 'web', title: 'InAppBi', company: 'Quanteon Solutions LLP', client: 'Quanteon Solutions LLP', tenure: '2018 - 2019',
+        id: 3, type: 'web', title: 'InAppBi', company: 'Quanteon Solutions LLP', client: 'Seven Tablets', tenure: '2018 - 2019',
         role: 'UI Developer',
         desc: 'InAppBI played a vital role in creating data sources, data models, and adding tables to these models, and building custom visualizations that look clean, modern, and fit seamlessly with a data-driven web portal backed. InAppBI proved to be a powerful and flexible framework for our needs, greatly reducing the time needed to generate and share insights from complex data.',
         technologies: ['React', 'Redux', 'Angular', 'Reactstrap', 'HTML/CSS'],
         isOpen: false
     },
     { 
-        id: 2, type: 'mobile', title: 'ePropertyPlus', company: 'Quanteon Solutions LLP', client: 'Quanteon Solutions LLP', tenure: 'Mar-2018 to Jul-2018',
+        id: 2, type: 'mobile', title: 'ePropertyPlus', company: 'Quanteon Solutions LLP', client: 'Seven Tablets', tenure: 'Mar-2018 to Jul-2018',
         role: 'JavaScript Full Stack Developer',
         desc: 'ePropertyPlus is a web as well as a mobile application too. I worked on a mobile app. We are turning the whole epropertyplus.com website to mobile (Android + iOS) both using React + Redux with Java as backend with MySQL Database. it is an application to create, view, edit, update and manage the property, services, and users too. allow them to navigate to the property using map view, can see the street view, property longitude, and altitude also.',
         technologies: ['React', 'Redux', 'Thunk', 'Bootstrap', 'HTML/CSS', 'NodeJS'],
         isOpen: false
     },
     { 
-        id: 1, type: 'mobile', title: 'NextUp', company: 'Quanteon Solutions LLP', client: 'Quanteon Solutions LLP', tenure: '2017 - 2018',
+        id: 1, type: 'mobile', title: 'NextUp', company: 'Quanteon Solutions LLP', client: 'Seven Tablets', tenure: '2017 - 2018',
         role: 'JavaScript Full Stack Developer',
         desc: 'Nextup is a mobile application that enables student-athletes and general sports enthusiasts to set goals, track daily progress, compare with athletes preparing for the same sports, create and respond to challenges. Worked as a full-stack developer on this project, developing backend services using Restify and mobile UI using the Ionic/AngularJS framework. This application requires media management (upload and play video files, capture camera recording, on-demand rank calculations). Uses S3 for storing media files (both videos and photos).',
         technologies: ['React', 'Redux', 'Angular', 'NodeJS', 'Express', 'Bootstrap', 'HTML/CSS'],
