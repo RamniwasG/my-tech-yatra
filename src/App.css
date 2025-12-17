@@ -28,6 +28,21 @@ h1 {
   background-color: #000000;
   color: white;
 }
+
+@media screen and (max-width: 899px) {
+  #home_work_img {
+    padding: 8px;
+    transform: rotate3d(1, 1, 1, 0deg);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #home_work_img {
+    padding: 0px;
+    transform: rotate3d(1, 1, 1, -45deg);
+  }
+}
+
 .text-info {
   font-size: 14px;
   text-align: center;
@@ -38,7 +53,6 @@ h1 {
   padding: 60px;
   padding-top: 8px;
   display: flex;
-  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .icon-wrapper > img {
