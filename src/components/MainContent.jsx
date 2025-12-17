@@ -5,17 +5,19 @@ import MyEducation from './contents/MyEducation';
 import MyProjects from './contents/MyProjects';
 import MyContact from './contents/MyContact';
 import TechnologiesIKnow from './contents/Technologies';
-import Others from './contents/Other';
+import MyGallery from './contents/MyGallery';
+import HomePage from './contents/Home';
 
 const MainContent = () => {
 
     return <Box id="Home" className="container">
         {/* <SearchBar /> */}
+        <HomePage />
         <MyWorkTour />
         <MyProjects />
         <TechnologiesIKnow />
         <MyEducation />
-        <Others />
+        <MyGallery />
         <MyContact />
     </Box>
 }

@@ -16,6 +16,18 @@ h1 {
 .main {
   padding: 1rem;
 }
+#jira-work {
+  align-items: center;
+  gap: 2rem;
+  background-color: bisque;
+}
+#Projects {
+  background-color: lightblue;
+}
+#contact {
+  background-color: #000000;
+  color: white;
+}
 .text-info {
   font-size: 14px;
   text-align: center;
@@ -74,6 +86,39 @@ h1 {
   height: 12px;
 }
 
+.carousel.carousel-slider {
+  width: 70% !important;
+  left: 15%;
+}
+
+@media screen and (max-width: 420px) {
+  .carousel.carousel-slider {
+    width: 90% !important;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .carousel.carousel-slider {
+    width: 80% !important;
+    left: 10%;
+  }
+}
+
 .carousel.carousel-slider .control-arrow {
   background-color: gray;
+}
+
+.carousel .slide img {
+  width: 640px;
+}
+
+@media screen and (max-width: 420px) {
+  .carousel .slide img {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .carousel .slide img {
+    width: 360px;
+  }
 }
