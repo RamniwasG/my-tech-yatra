@@ -14,7 +14,7 @@ const HomePage = () => {
         {devOpsWork.map((dow) => {
             return <Box key={dow.title} id="jira-work"
                 className={`container ${dow.classes}`}
-                height={'60vh'}
+                height={'80vh'}
                 display="flex" flexDirection="row"
                 style={{...dow.styles}}
             >
