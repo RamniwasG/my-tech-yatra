@@ -32,7 +32,11 @@ const Others = () => {
             >
                 {images.map((src, index) => (
                     <div key={index} className="rounded-lg shadow-md bg-white p-4">
-                        <img src={src} width="240" height='300' alt={`Gallery-pic-${index + 1}`} className="w-[200px] md:width-[420px] h-full object-fit rounded-lg transition-transform duration-300 hover:scale-105" />
+                        <img src={src} width="240" height='300'
+                            alt={`Gallery-pic-${index + 1}`}
+                            className="w-[200px] md:width-[420px] h-full object-fit rounded-lg transition-transform duration-300 hover:scale-105"
+                            style={{width: index < 2 ? 'auto' : '' }}
+                        />
                     </div>
                 ))}
             </Carousel>
