@@ -29,7 +29,7 @@ const MyWorkTour = () => {
                 />
             )}
         </Box>
-       <Box component="h1" mb={1} className='text-shadow'>My work tour</Box>
+       <Box component="h1" mb={1} className='text-shadow'>Live work tour</Box>
         <TextInfo text="( To get a quick tour of my work, please click on below links. )" />
         <Box className="container"
             alignItems="center"

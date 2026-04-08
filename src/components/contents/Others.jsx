@@ -4,20 +4,23 @@ import Github from './../../assets/Github.png'
 import Render from './../../assets/renderwork.png'
 
 const devOpsWork = [
-    { title: 'Jira work', subTitle: 'Managing Jira operations', imgUrl: JiraWork, styles: { backgroundColor: 'bisque'} },
-    { title: 'Git work',  subTitle: 'Performing all Githb actions', imgUrl: Github, styles: { color: 'white', backgroundColor: 'firebrick'} },
-    { title: 'Render work',  subTitle: 'Build, Run and Deploy apps on render, railway, firebase etc', imgUrl: Render, styles: { color: 'white', backgroundColor: 'orange'} }
+    { title: 'Jira', subTitle: 'Managing all Jira operations', imgUrl: JiraWork, styles: { backgroundColor: 'bisque'} },
+    { title: 'Git',  subTitle: 'Performing all Git actions', imgUrl: Github, styles: { color: 'white', backgroundColor: 'firebrick'} },
+    { title: 'Deployment',  subTitle: 'Build, Run and Deploy apps on render, railway, firebase etc', imgUrl: Render, styles: { color: 'white', backgroundColor: 'orange'} }
 ]
 
 const HomePage = () => {
-    return <Box display={'flex'} flexDirection={'column'}>
-        {devOpsWork.map((dow) => {
+    return <Box id="Others" display={'flex'} flexDirection={'column'}>
+        {devOpsWork.map((dow, index) => {
             return <Box key={dow.title} id="jira-work"
                 className={`container ${dow.classes}`}
                 display="flex"
                 sx={{
-                    height: {xs: '40vh', sm: '60vh', md: '80vh' },
-                    flexDirection: { sm: 'column', md: 'row'}
+                    // height: {xs: '40vh', sm: '60vh', md: '80vh' },
+                    flexDirection: { 
+                        sm: index % 2 === 0 ? 'column' : 'column-reverse', 
+                        md: index % 2 === 0 ? 'row' : 'row-reverse'
+                    }
                 }}
                 style={{...dow.styles}}
             >

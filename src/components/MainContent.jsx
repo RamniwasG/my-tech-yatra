@@ -6,18 +6,18 @@ import MyProjects from './contents/MyProjects';
 import MyContact from './contents/MyContact';
 import TechnologiesIKnow from './contents/Technologies';
 import MyGallery from './contents/MyGallery';
-import HomePage from './contents/Home';
+import Others from './contents/Others';
 
 const MainContent = () => {
 
     return <Box id="Home" className="container">
         {/* <SearchBar /> */}
-        <HomePage />
         <MyWorkTour />
         <MyProjects />
-        <TechnologiesIKnow />
-        <MyEducation />
         <MyGallery />
+        <TechnologiesIKnow />
+        <Others />
+        <MyEducation />
         <MyContact />
     </Box>
 }

@@ -23,11 +23,6 @@ export const myWorkTour = [
                 url: 'https://egwala-app.onrender.com'
             },
             {
-                label: 'Maiher Farms Ltd',
-                value: 'mfltd',
-                url: 'https://maihar-farms-ltd.web.app/home'
-            },
-            {
                 label: 'Monthly Hisab Kitab',
                 value: 'mhk',
                 url: 'https://monthly-hisab-kitab.web.app/'

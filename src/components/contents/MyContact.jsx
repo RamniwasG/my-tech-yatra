@@ -8,16 +8,16 @@ const MyContact = () => {
             <Box className="container">
                 <Box component="h6" mt={0} mb={1}>Address:</Box>
                 <Box component="span" className='text-sm'>
-                    H.No. 70K, Jargon Khas<br /> Ghazipur, UP India - 233300
+                    Ghazipur, Uttar Pradesh <br/> India - 233300
                 </Box>
             </Box>
             <Box className="container" alignItems="flex-end">
-                <Box component="h6" mt={0} mb={1}>Call/SMS or Email@:</Box>
+                <Box component="h6" mt={0} mb={1}>WhatsApp or Email:</Box>
                 <Box component="span" className='text-sm'>
-                +91 8686340975
+                    +91 8686340975
                 </Box>
                 <Box component="span" className='text-sm'>
-                ramniwasg96@gmail.com
+                    ramniwas.nitrr15@gmail.com
                 </Box>
             </Box>
         </Box>

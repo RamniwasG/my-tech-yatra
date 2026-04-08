@@ -13,7 +13,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AppLogo from './../assets/logo.png'
 
-const pages = ['Home', 'Work', 'Education', 'Projects', 'Technologies', 'Gallery', 'Contact'];
+const pages = ['Home', 'Work', 'Projects', 'Gallery', 'Technologies', 'Others', 'Education', 'Contact'];
 const settings = ['Profile', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -88,7 +88,10 @@ function ResponsiveAppBar() {
               sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page}
+                  className='cursor-pointer'
+                  onClick={handleCloseNavMenu}
+                >
                   <Button
                     key={page}
                     href={`#${page}`}
