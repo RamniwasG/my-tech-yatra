@@ -28,7 +28,14 @@ import Gallery27 from './../assets/gallery-pictures/gallery-image-000027.png'
 import Gallery28 from './../assets/gallery-pictures/gallery-image-000028.png'
 import Gallery29 from './../assets/gallery-pictures/gallery-image-000029.png'
 
-export const images = [
+// udemy course completion certificates
+import ccc1 from './../assets/ccc/certificate_1.jpg'
+import ccc2 from './../assets/ccc/certificate_2.jpg'
+import ccc3 from './../assets/ccc/certificate_3.jpg'
+import ccc4 from './../assets/ccc/certificate_4.jpg'
+import ccc5 from './../assets/ccc/certificate_5.jpg'
+
+export const galleryImages = [
     Gallery1,
     Gallery2,
     Gallery3,
@@ -60,3 +67,6 @@ export const images = [
     Gallery29
 ];
 
+export const courseGallery = [
+    ccc1, ccc2, ccc3, ccc4, ccc5
+]

@@ -9,8 +9,8 @@ const devOpsWork = [
     { title: 'Deployment',  subTitle: 'Build, Run and Deploy apps on render, railway, firebase etc', imgUrl: Render, styles: { color: 'white', backgroundColor: 'orange'} }
 ]
 
-const HomePage = () => {
-    return <Box id="Others" display={'flex'} flexDirection={'column'}>
+const ToolsComponent = () => {
+    return <Box id="Tools" display={'flex'} flexDirection={'column'}>
         {devOpsWork.map((dow, index) => {
             return <Box key={dow.title} id="jira-work"
                 className={`container ${dow.classes}`}
@@ -45,4 +45,4 @@ const HomePage = () => {
     </Box>
 }
 
-export default HomePage;
+export default ToolsComponent;

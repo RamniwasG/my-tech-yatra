@@ -6,7 +6,8 @@ import MyProjects from './contents/MyProjects';
 import MyContact from './contents/MyContact';
 import TechnologiesIKnow from './contents/Technologies';
 import MyGallery from './contents/MyGallery';
-import Others from './contents/Others';
+import ToolsComponent from './contents/Tools';
+import MyCourseCompletion from './contents/MyCourseCompletion';
 
 const MainContent = () => {
 
@@ -15,8 +16,9 @@ const MainContent = () => {
         <MyWorkTour />
         <MyProjects />
         <MyGallery />
+        <MyCourseCompletion />
         <TechnologiesIKnow />
-        <Others />
+        <ToolsComponent />
         <MyEducation />
         <MyContact />
     </Box>
